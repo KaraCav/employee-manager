@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
+constructor(id, name, phone, title) {
+  this.id = id;
+  this.name = name;
+  this.phone = phone;
+  this.title = title;
+}
 
-class EmployeeEditor extends Component {
-  constructor() {
-    super();
-    this.state = {
-      employee: null,
-      originalEmployee: null,
-      notModified: true
-    };
-  }
+updateName(name) {
+  this.name = name;
+}
+
+updatePhone(phone) {
+  this.phone = phone;
+}
+
+updateTitle(title) {
+  this.title = title;
+}
 
   // componentWillReceiveProps
 
